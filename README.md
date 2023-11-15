@@ -13,10 +13,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Jij
 
 <details open>
-  <summary>uitwerken voor kick-off werkgroep</summary>
+  <summary>uitwerken voor kick-off werkgroep   --- https://tomvand298.github.io/BlokWeb/ </summary>
 
   ### Auteur:
-  Sanne 't Hooft (vervangen door jouw naam)
+  Tom van Droffelaar
 
   #### Je startniveau:
   hier je startniveau (kies uit zwart, rood óf blauw)
