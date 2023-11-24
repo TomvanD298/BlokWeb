@@ -29,3 +29,87 @@
 
 /* jouw code */
 
+html,body {
+    max-width: 100%;
+    overflow-x: hidden;
+	background-color: black;
+	padding: 0;
+	margin: 0;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    display: flex;
+	justify-content: left;
+	flex-wrap: wrap;
+
+    align-items: center;
+    height: 64px;
+    padding: 0 24px;
+	background-color: black;
+	filter: blur(4px);
+}
+
+header img {
+	height: 100%;
+	flex-grow: 1;
+}
+
+
+header ul {
+	color: white;
+	text-decoration: none;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+#fade-screen {
+    position: fixed;
+	z-index: 10;
+	top: 0;
+	left:0;
+	bottom:0;
+	right:0;
+	background-color:rgb(70, 159, 136);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+#fade-screen img {
+height: 25vh;
+z-index: 11;
+}
+
+.fade-out {
+    animation: fadeOut 2s ease;
+}
+
+@keyframes fadeOut {
+    to {
+        opacity: 0;
+		transform: translateY(-40px);
+    }
+}
+
+
+video {
+	z-index: 0;
+	padding: 0;
+	width: auto;
+	height: 100vh;
+}
+
+
+p {
+	color: white;
+}
+
