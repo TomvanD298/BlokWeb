@@ -19,10 +19,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Tom van Droffelaar
 
   #### Je startniveau:
-  Rood/Zwart
+  Rood
 
   #### Je focus:
-  hier je focus (kies uit responsive óf surface plane)
+  Responsive
  
 </details>
 
@@ -45,7 +45,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de tweede pagina (small screen):
   Aston Martin - DBX707  
-  <img src="readme-images/Screenshot-am2" width="375px" alt="Detail pagina van de auto">
+  <img src="readme-images/Screenshot-am2.jpg" width="375px" alt="Detail pagina van de auto">
  
 </details>
 
@@ -71,10 +71,10 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/FED.jpg.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/FED.jpg" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/Screenshot-menu.png.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/Screenshot-menu.png" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
   <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">

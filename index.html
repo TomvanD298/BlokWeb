@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="nl">
+<html lang="en">
 
 <head>
 	<meta charset="UTF-8">
@@ -14,30 +14,94 @@
 
 <body>
 
-	<div id="fade-screen">
-		<img src="images/110years.svg">
-	</div>
+	<!-- <div id="fade-screen">
+		<img id="fade-image" src="images/110years.svg">
+	</div> -->
 
 	<header>
+		<button aria-hidden="true"><img src="https://assets.codepen.io/274456/ui-icon-hamburger.svg"
+				alt="Hamburger menu" /></button>
 		<nav>
+			<button aria-hidden="true"><img src="https://assets.codepen.io/274456/ui-icon-cross.svg"
+					alt="close button" /></button>
 			<ul>
-				<li>Menu</li>
+				<li><a class="active">Home</a></li>
+				<li><a href="#"> Our World</a></li>
+				<li><a href="#"> Models</a></li>
+				<li><a href="#"> Find a Dealer</a></li>
+				<li><a href="#"> Owners</a></li>
+				<li><a href="#"> Store</a></li>
+				<li><a href="#"> Lifestyle</a></li>
+				<li><a href="#"> F1 Team</a></li>
 			</ul>
+
+			<button class="buttonWit">Configure</button>
+			<button class="buttonGroen">Enquiry</button>
+		</nav>
 		</nav>
 		<img src="images/logo.svg">
 	</header>
-	<section>
-		<video autoplay loop src="videos/video1phone.mp4"></video>
-	</section>
+		<!-- <div id="video-carousel"> -->
+		<!-- <video class="video" id="video1" autoplay muted loop src="videos/medicalFull.mp4"></video> -->
 
-	<section>
+		<section id="video-carousel">
+			<div id="video-container">
+				<div  class="video">
+					<video autoplay muted loop src="videos/medicalFull.mp4" type="video/mp4"></video>
+					Your browser does not support the video tag.
+					<div class="container">
+						<h2>power.driven.</h2>
+						<h1> DBX707 Formula 1® Medical Car </h1>
+						<button class="buttonWit">Explore DBX707 FIA F1® Medical Car</button>
+					</div>
+				</div>
+				<div  class="video">
+					<video autoplay muted loop src="videos/video1.mp4" type="video/mp4"></video>
+					Your browser does not support the video tag.
+					<div class="container">
+						<h2>power.driven.</h2>
+						<h1> DBX707 Formula 1® Medical Car </h1>
+						<button class="buttonWit">Explore DBX707 FIA F1® Medical Car</button>
+					</div>
+				</div>
+				<div class="video">
+					<video autoplay muted loop  src="videos/video3.mp4" type="video/mp4"></video>
+					Your browser does not support the video tag.
+					<div class="container">
+						<h1> DB12 </h1>
+						<button class="buttonWit">Explore DBX707 FIA F1® Medical Car</button>
+					</div>
+				</div>
+			</div>
+
+
+			<button id="prevBtn" onclick="prevSlide()"><img src="/images/pijlLinks.svg"></button>
+			<button id="nextBtn" onclick="nextSlide()"><img src="/images/pijlRechts.svg"></button>
+		</section>
+
+
+	<section class="bdx">
 		<p>
 			DBX707. Blistering Aston Martin sports car performance. In a luxury SUV. Colossal power you can access and
 			control.
 		</p>
 
-	<button>Configure</button>
-	<button>Request a testdrive</button>
+		<button class="buttonWit">Configure</button>
+		<button class="buttonGroen">Request a testdrive</button>
+	</section>
+
+
+	<section class="scrollText">
+		<p>We have an unstoppable quest for profound gratification A desire to capture the pure human emotion of the
+			driving experience.</p>
+		<div>
+			<div>---</div>
+			<div>Aston Martin</div>
+		</div>
+	</section>
+
+	<section class="achtergrondVid">
+		<video autoplay loop muted src="videos/video3.mp4"></video>
 	</section>
 
 

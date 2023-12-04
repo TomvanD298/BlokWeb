@@ -1,8 +1,10 @@
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
 }
 
 
@@ -15,8 +17,8 @@
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-text: #111;
+	--color-background: #eee;
 }
 
 
@@ -29,32 +31,56 @@
 
 /* jouw code */
 
-html,body {
-    max-width: 100%;
-    overflow-x: hidden;
+@font-face {
+	font-family: AMSansRg;
+	src: url(../fonts/AstonMartinSans_Rg.woff2);
+}
+
+@font-face {
+	font-family: AMSansLt;
+	src: url(../fonts/AstonMartinSans_Lt.woff2);
+}
+
+@font-face {
+	font-family: AMFlareRg;
+	src: url(../fonts/AstonMartinFlare_Rg.woff2);
+}
+
+@font-face {
+	font-family: AMFlareMd;
+	src: url(../fonts/AstonMartinFlare_Md.woff2);
+}
+
+html,
+body {
+	max-width: 100%;
+	overflow-x: hidden;
 	background-color: black;
 	padding: 0;
 	margin: 0;
+	font-family: AMSansRg;
 }
 
-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+header {
+	position: fixed;
+	z-index: 9;
+	top: 0;
+	left: 0;
+	width: 100%;
 
-    display: flex;
+	display: flex;
 	justify-content: left;
 	flex-wrap: wrap;
 
-    align-items: center;
-    height: 64px;
-    padding: 0 24px;
-	background-color: black;
-	filter: blur(4px);
+	align-items: center;
+	height: 64px;
+	padding: 0 24px;
+	background-color: rgba(0, 0, 0, 0.15);
+
+	/* backdrop-filter: blur(10px); */
 }
 
-header img {
+header img:last-of-type {
 	height: 100%;
 	flex-grow: 1;
 }
@@ -62,54 +88,326 @@ header img {
 
 header ul {
 	color: white;
+	font-size: 20px;
 	text-decoration: none;
 	list-style: none;
 	margin: 0;
-	padding: 0;
+}
+
+header button {
+	padding: .5em;
+
+	display: flex;
+	align-items: center;
+	gap: .25em;
+
+	appearance: none;
+	background-color: transparent;
+	border: none;
+	border-radius: .25em;
+	text-align: center;
+	color: #fff;
 }
 
 
+nav button:first-of-type {
+	justify-self: end;
+}
+
+nav {
+	padding: 16px 20px 16px 16px;
+
+	display: grid;
+	align-content: start;
+
+	background-color: rgba(0, 0, 0, 0.8);
+	backdrop-filter: blur(10px);
+
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+
+	translate: 0% -100%;
+
+	transition: translate .6s;
+}
+
+nav.toonMenu {
+	translate: 0% 0%;
+	transition: translate .6s;
+
+
+}
+
+nav ul {
+	margin: 0;
+	padding: 0em;
+	list-style: none;
+
+}
+
+nav a {
+	/* icon en tekst met gap-je naast elkaar */
+	display: flex;
+	align-items: center;
+	column-gap: .25em;
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.8);
+
+
+	border-bottom: solid 1px var(--menu-border);
+
+	margin: 0 0 24px 0;
+}
+
+nav a:hover {
+	color: rgba(255, 255, 255, 1);
+}
+
+nav a.active {
+	font-weight: bold;
+}
+
+nav img {
+	padding-bottom: 16px;
+
+}
+
+.pijlLinks, .pijlRechts {
+	width: 24px;
+	bottom: 18px;
+}
 
 #fade-screen {
-    position: fixed;
-	z-index: 10;
+	position: fixed;
+	z-index: 100;
 	top: 0;
-	left:0;
-	bottom:0;
-	right:0;
-	background-color:rgb(70, 159, 136);
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background-color: rgb(70, 159, 136);
 	display: flex;
 	align-items: center;
 	justify-content: center;
 
+	animation: fadeOut 2s ease forwards;
+	animation-delay: 5s;
+
 }
 
-#fade-screen img {
-height: 25vh;
-z-index: 11;
-}
-
-.fade-out {
-    animation: fadeOut 2s ease;
-}
 
 @keyframes fadeOut {
-    to {
-        opacity: 0;
-		transform: translateY(-40px);
-    }
+	to {
+		opacity: 0;
+		z-index: -10;
+	}
+}
+
+#fade-image {
+	height: 25vh;
+	z-index: 11;
+	animation: imageFade 6s ease-in-out forwards;
+}
+
+@keyframes imageFade {
+
+	0% {
+		opacity: 0%;
+	}
+
+
+	50% {
+		opacity: 100%;
+	}
+
+	75% {
+		opacity: 100%;
+		transform: translateY(0);
+		scale: 1;
+	}
+	
+	100% {
+		opacity: 0%;
+		transform: translateY(-500px);
+		scale: .2;
+		z-index: -11;
+	}
 }
 
 
-video {
-	z-index: 0;
+.container {
+	z-index: 5;
+	margin-top: -350px;
+	padding: 48px 80px;
+}
+
+
+
+h1 {
+	color: #fff;
+	font-family: AMSansLt;
+	font-size: 48px;
 	padding: 0;
-	width: auto;
-	height: 100vh;
+	margin: 0;
+	line-height: 50px;
+	letter-spacing: 0;
 }
 
+h2 {
+	color: #fff;
+	font-size: 14px;
+	text-transform: uppercase;
+	padding: 0;
+	line-height: 0px;
+}
 
 p {
 	color: white;
 }
 
+
+
+.bdx {
+	padding: 48px 24px;
+	background-image: url("../images/quote-mobile.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	backdrop-filter: blur(10px);
+
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.bdx p {
+	/* padding: 48px 24px; */
+
+	font-size: 28px;
+}
+
+.buttonWit,
+.buttonGroen {
+	font-size: 16px;
+	color: #00665e;
+
+	width: 327px;
+	height: 56px;
+	border: none;
+	border-radius: 2px;
+	padding: 0 16px;
+	margin: 16px 0 0;
+
+	background: #fff;
+	justify-content: space-around
+}
+
+.buttonGroen {
+	color: white;
+	background: rgba(255, 255, 255, .15);
+}
+
+.scrollText {
+	background-color: #00665e;
+
+}
+
+.scrollText p {
+	width: 90%;
+	padding: 48px 24px;
+	margin: auto;
+	font-size: 28px;
+}
+
+.scrollText div:nth-of-type(1) {
+	display: flex;
+	width: 90%;
+	margin-left: auto;
+	color: white;
+}
+
+
+
+
+#video-carousel {
+	display: flex;
+	flex-wrap: wrap;
+	min-width: 100%;
+	height: 100vh;
+	margin: auto;
+	overflow: hidden;
+	object-fit: cover;
+
+  }
+
+  #video-container {
+	display: flex;
+	transition: transform 1.5s ease-out;
+  }
+
+  .video {
+	z-index: 0;
+	padding: 0;
+	height: 100vh;
+    object-fit: cover;
+	min-width: 100%;
+	margin: auto;
+	width: auto;
+  }
+
+  #prevBtn, #nextBtn {
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: white;
+	background-color: transparent;
+	border: none;
+	font-weight: bold;
+	font-size: 18px;
+	transition: 0.6s ease;
+	user-select: none;
+  }
+
+  #nextBtn {
+	right: 10px;
+  }
+
+  #prevBtn {
+	left: 10px;
+  }
+
+  #prevBtn:hover, #nextBtn:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+  }
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+	video:first-of-type {
+
+		display: block;
+		margin-left: -50%;
+	}
+
+	/* #prevBtn, #nextBtn {
+		top: 95%;
+		width: auto;
+		padding: 16px;
+		margin-top: -22px;
+		color: white;
+		font-weight: bold;
+		font-size: 18px;
+		transition: 0.6s ease;
+		user-select: none;
+	  } */
+}
