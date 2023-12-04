@@ -7,11 +7,6 @@
 	box-sizing: border-box;
 }
 
-
-
-
-
-
 /*********************/
 /* CUSTOM PROPERTIES */
 /*********************/
@@ -20,9 +15,6 @@
 	--color-text: #111;
 	--color-background: #eee;
 }
-
-
-
 
 
 /****************/
@@ -55,7 +47,7 @@ html,
 body {
 	max-width: 100%;
 	overflow-x: hidden;
-	background-color: black;
+	background-color: white;
 	padding: 0;
 	margin: 0;
 	font-family: AMSansRg;
@@ -63,26 +55,58 @@ body {
 
 header {
 	position: fixed;
-	z-index: 9;
+	z-index: 99;
 	top: 0;
 	left: 0;
 	width: 100%;
 
 	display: flex;
-	justify-content: left;
+	justify-content: space-between;
+	align-items: center;
 	flex-wrap: wrap;
 
 	align-items: center;
 	height: 64px;
 	padding: 0 24px;
 	background-color: rgba(0, 0, 0, 0.15);
+	transition: all ease .4s;
 
 	/* backdrop-filter: blur(10px); */
 }
 
-header img:last-of-type {
-	height: 100%;
+
+
+
+h2 {
+	color: #fff;
+	font-family: AMFlareRg;
+	font-weight: 100;
+	font-size: 3em;
+	padding: 0;
+	margin: 0;
+	line-height: 50px;
+	letter-spacing: 0;
+}
+
+p {
+	color: white;
+}
+
+
+header img {
 	flex-grow: 1;
+	height: 100%;
+}
+
+#logo{
+	height: 125%;
+}
+
+
+header svg {
+	fill: white;
+	width: 20px;
+	height: 20px;
 }
 
 
@@ -167,7 +191,8 @@ nav a:hover {
 }
 
 nav a.active {
-	font-weight: bold;
+	color: rgba(255, 255, 255, 1);
+	text-decoration: underline;
 }
 
 nav img {
@@ -175,7 +200,9 @@ nav img {
 
 }
 
-.pijlLinks, .pijlRechts {
+
+.pijlLinks,
+.pijlRechts {
 	width: 24px;
 	bottom: 18px;
 }
@@ -227,7 +254,7 @@ nav img {
 		transform: translateY(0);
 		scale: 1;
 	}
-	
+
 	100% {
 		opacity: 0%;
 		transform: translateY(-500px);
@@ -237,60 +264,27 @@ nav img {
 }
 
 
-.container {
-	z-index: 5;
-	margin-top: -350px;
-	padding: 48px 80px;
-}
-
-
-
-h1 {
-	color: #fff;
-	font-family: AMSansLt;
-	font-size: 48px;
-	padding: 0;
-	margin: 0;
-	line-height: 50px;
-	letter-spacing: 0;
-}
-
-h2 {
-	color: #fff;
-	font-size: 14px;
-	text-transform: uppercase;
-	padding: 0;
-	line-height: 0px;
-}
-
-p {
-	color: white;
-}
-
-
-
 .bdx {
 	padding: 48px 24px;
 	background-image: url("../images/quote-mobile.png");
 	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	backdrop-filter: blur(10px);
-
+	background-size: fill;
 	display: flex;
 	flex-wrap: wrap;
 }
 
 .bdx p {
 	/* padding: 48px 24px; */
-
 	font-size: 28px;
 }
 
 .buttonWit,
-.buttonGroen {
-	font-size: 16px;
+.buttonGroen,.buttonWitKlein,
+.buttonGroenKlein {
+	font-size: 1em;
 	color: #00665e;
+	font-family: AMSansRg;
+	font-style: normal;
 
 	width: 327px;
 	height: 56px;
@@ -303,60 +297,91 @@ p {
 	justify-content: space-around
 }
 
-.buttonGroen {
+.buttonGroen, .buttonGroenKlein {
 	color: white;
 	background: rgba(255, 255, 255, .15);
 }
 
-.scrollText {
+.buttonKlein {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.buttonWitKlein,
+.buttonGroenKlein {
+	width: 150px;
+	height: 56px;
+}
+
+
+
+.reveal-type {
 	background-color: #00665e;
 
 }
 
-.scrollText p {
-	width: 90%;
-	padding: 48px 24px;
-	margin: auto;
+.reveal-type p {
+	padding: 48px 24px 24px 24px;
 	font-size: 28px;
 }
 
-.scrollText div:nth-of-type(1) {
-	display: flex;
-	width: 90%;
-	margin-left: auto;
-	color: white;
+.reveal-type p:nth-of-type(2) {
+	padding: 0;
+	font-family: AMFlareRg;
+	font-size: 1em;
 }
+
+
+#asLijn {
+	height: 1px;
+	width: 49px;
+	background: white;
+
+
+}
+
+
+
+
+
 
 
 
 
 #video-carousel {
 	display: flex;
-	flex-wrap: wrap;
-	min-width: 100%;
-	height: 100vh;
-	margin: auto;
-	overflow: hidden;
-	object-fit: cover;
+	flex-wrap: nowrap;
+}
 
-  }
-
-  #video-container {
-	display: flex;
-	transition: transform 1.5s ease-out;
-  }
-
-  .video {
+video {
 	z-index: 0;
-	padding: 0;
 	height: 100vh;
-    object-fit: cover;
-	min-width: 100%;
-	margin: auto;
-	width: auto;
-  }
+	object-fit: cover;
+	min-width: 100vw;
+	padding: 0;
+}
 
-  #prevBtn, #nextBtn {
+.container {
+	z-index: 5;
+	margin-top: -20%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	position: relative;
+	bottom: 10%;
+	max-width: 90vw;
+	margin-left: 5vw;
+
+}
+
+
+.vantage .container {
+	position: relative;
+}
+
+
+#prevBtn,
+#nextBtn {
 	position: absolute;
 	top: 50%;
 	width: auto;
@@ -365,30 +390,133 @@ p {
 	color: white;
 	background-color: transparent;
 	border: none;
+	border-radius: 2px;
 	font-weight: bold;
-	font-size: 18px;
 	transition: 0.6s ease;
 	user-select: none;
-  }
+}
 
-  #nextBtn {
+#nextBtn {
 	right: 10px;
-  }
+}
 
-  #prevBtn {
+#prevBtn {
 	left: 10px;
-  }
+}
 
-  #prevBtn:hover, #nextBtn:hover {
-	background-color: rgba(0, 0, 0, 0.8);
-  }
-
-
-
+#prevBtn:hover,
+#nextBtn:hover {
+	background-color: rgba(255, 255, 255, 0.8);
+}
 
 
 
 
+
+footer {
+	background-color: #fff;
+	width: 95%;
+	margin-left: 2.5%;
+	padding: 80px 24px 40px;
+	align-items: center;
+	font-family: AMSansLt;
+	font-size: 14px;
+
+}
+
+h3 {
+	font-size: 1.5em;
+	font-family: AMFlareRg;
+}
+
+
+/* h4:first-of-type {
+	margin-top: 50px;
+} */
+
+h5 {
+	font-size: 9px;
+	margin-bottom: 75px;
+}
+
+footer p {
+	color: black;
+	flex-grow: 1;
+}
+
+#footerBoven {
+	all: unset;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: start;
+	flex-wrap: wrap;
+	gap: 20px;
+	list-style: none;
+}
+
+
+.lijntje {
+	height: 1px;
+	background: black;
+	margin-bottom: 50px;
+}
+
+
+form {
+	width: 100%;
+	height: 44px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+input {
+	all: unset;
+	font: 1em;
+	color: black;
+	height: 100%;
+	width: 100%;
+}
+
+::placeholder {
+	color: #fff;
+	opacity: 0.7;
+}
+
+form button {
+	all: unset;
+	cursor: pointer;
+	width: 44px;
+	height: 44px;
+}
+
+svg {
+	color: #6f6f6f;
+	width: 16px;
+	height: 16px;
+	padding: none;
+}
+
+
+#footerSocial {
+	all: unset;
+	list-style: none;
+	color: black;
+	display: flex;
+	gap: 10px;
+}
+
+#footerSocial svg {
+	width: 28px;
+	height: 28px;
+}
+
+#footerBeneden {
+	display: flex;
+	flex-wrap: nowrap;
+	gap: 10px;
+}
 
 
 
@@ -399,15 +527,9 @@ p {
 		margin-left: -50%;
 	}
 
-	/* #prevBtn, #nextBtn {
-		top: 95%;
-		width: auto;
-		padding: 16px;
-		margin-top: -22px;
-		color: white;
-		font-weight: bold;
-		font-size: 18px;
-		transition: 0.6s ease;
-		user-select: none;
-	  } */
+	#prevBtn,
+	#nextBtn {
+		scale: 50%;
+		top: 94%;
+	}
 }

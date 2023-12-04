@@ -1,12 +1,12 @@
 // JavaScript Document
 console.log("hi");
 
-document.addEventListener('DOMContentLoaded', function() {
-    // Wacht 3 seconden voordat je het plaatje laat vervagen
-    setTimeout(function() {
-        var imageContainer = document.getElementById('fade-screen');
-        imageContainer.classList.add('fade-out');
-    }, 4000);
+document.addEventListener('DOMContentLoaded', function () {
+  // Wacht 3 seconden voordat je het plaatje laat vervagen
+  setTimeout(function () {
+    var imageContainer = document.getElementById('fade-screen');
+    imageContainer.classList.add('fade-out');
+  }, 4000);
 });
 
 
@@ -19,7 +19,7 @@ var openButton = document.querySelector("header > button");
 
 openButton.onclick = openMenu;
 
-function openMenu() {  
+function openMenu() {
 
   var deNav = document.querySelector("nav");
 
@@ -42,37 +42,53 @@ function sluitMenu() {
 
 // ------------- CODE CAROUSEL  (Met hulp van ChatGPT)------------
 
-let currentSlide = 0;
-  let slideInterval;
+var naarLinks = document.getElementById('prevBtn');
+var naarRechts = document.getElementById('nextBtn');
 
-  function showSlide() {
-    const videoContainer = document.getElementById('video-container');
-    const totalSlides = document.querySelectorAll('.video').length;
-    if (currentSlide >= totalSlides) {
-      currentSlide = 0;
-    } else if (currentSlide < 0) {
-      currentSlide = totalSlides - 1;
-    }
-    const translateValue = -currentSlide * 100 + '%';
-    videoContainer.style.transform = 'translateX(' + translateValue + ')';
-  }
+// function slideLinks {
+// }
 
-  function nextSlide() {
-    currentSlide++;
-    showSlide();
-    resetSlideInterval();
-  }
+// ------------- Scrolltext   https://codepen.io/designcourse/pen/vYQQKBW ------------
+gsap.registerPlugin(ScrollTrigger)
 
-  function prevSlide() {
-    currentSlide--;
-    showSlide();
-    resetSlideInterval();
-  }
+const splitTypes = document.querySelectorAll('.reveal-type')
 
-  function resetSlideInterval() {
-    clearInterval(slideInterval);
-    slideInterval = setInterval(nextSlide, 8000);
-  }
+splitTypes.forEach((char, i) => {
 
-  // Initiate the slide interval
-  resetSlideInterval();
+  const bg = char.dataset.bgColor
+  const fg = char.dataset.fgColor
+
+  const text = new SplitType(char, { types: 'chars' })
+
+  gsap.fromTo(text.chars,
+    {
+      color: bg,
+    },
+    {
+      color: fg,
+      duration: 0.3,
+      stagger: 0.02,
+      scrollTrigger: {
+        trigger: char,
+        start: 'top 70%',
+        end: 'top 10%',
+        scrub: true,
+        markers: false,
+        toggleActions: 'play play reverse reverse'
+      }
+    })
+})
+
+
+const lenis = new Lenis()
+
+lenis.on('scroll', (e) => {
+  console.log(e)
+})
+
+function raf(time) {
+  lenis.raf(time)
+  requestAnimationFrame(raf)
+}
+
+requestAnimationFrame(raf)
