@@ -21,6 +21,22 @@
 /* JOUW STYLING */
 /****************/
 
+#style-3::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	background-color: transparent;
+}
+
+#style-3::-webkit-scrollbar {
+	width: 6px;
+	background-color: transparent;
+}
+
+#style-3::-webkit-scrollbar-thumb {
+	background-color: #000000;
+}
+
+
+
 /* jouw code */
 
 @font-face {
@@ -63,16 +79,25 @@ header {
 
 	display: flex;
 	justify-content: space-between;
-	align-items: center;
+	align-content: center;
 	flex-wrap: wrap;
 
 	align-items: center;
 	height: 64px;
 	padding: 0 24px;
-	background-color: rgba(0, 0, 0, 0.15);
 	transition: all ease .4s;
+}
 
-	/* backdrop-filter: blur(10px); */
+#headerBlur {
+	position: fixed;
+	z-index: 99;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 64px;
+	z-index: 98;
+	background-color: rgba(0, 0, 0, 0.5);
+	backdrop-filter: blur(20px);
 }
 
 
@@ -99,7 +124,7 @@ header img {
 	height: 100%;
 }
 
-#logo{
+#logo {
 	height: 125%;
 }
 
@@ -141,13 +166,10 @@ nav button:first-of-type {
 
 nav {
 	padding: 16px 20px 16px 16px;
-
 	display: grid;
 	align-content: start;
-
+	justify-content: center;
 	background-color: rgba(0, 0, 0, 0.8);
-	backdrop-filter: blur(10px);
-
 	position: fixed;
 	left: 0;
 	right: 0;
@@ -156,12 +178,12 @@ nav {
 
 	translate: 0% -100%;
 
-	transition: translate .6s;
+	transition: translate .6s ease-out;
 }
 
 nav.toonMenu {
 	translate: 0% 0%;
-	transition: translate .6s;
+	transition: translate .6s ease-out;
 
 
 }
@@ -280,7 +302,8 @@ nav img {
 }
 
 .buttonWit,
-.buttonGroen,.buttonWitKlein,
+.buttonGroen,
+.buttonWitKlein,
 .buttonGroenKlein {
 	font-size: 1em;
 	color: #00665e;
@@ -298,7 +321,8 @@ nav img {
 	justify-content: space-around
 }
 
-.buttonGroen, .buttonGroenKlein {
+.buttonGroen,
+.buttonGroenKlein {
 	color: white;
 	background: rgba(255, 255, 255, .15);
 }
@@ -312,6 +336,7 @@ nav img {
 .buttonGroenKlein {
 	width: 150px;
 	height: 56px;
+	margin: 0 16px 0 16px;
 }
 
 
@@ -330,17 +355,9 @@ nav img {
 	padding: 0;
 	font-family: AMFlareRg;
 	font-size: 1em;
+	margin-left: 5%;
+	padding-bottom: 15px;
 }
-
-
-#asLijn {
-	height: 1px;
-	width: 49px;
-	background: white;
-
-
-}
-
 
 #video-carousel {
 	display: flex;
@@ -349,6 +366,7 @@ nav img {
 	height: 100vh;
 	scroll-snap-type: x mandatory;
 	scroll-snap-align: center;
+	overflow-y: hidden;
 
 }
 
@@ -380,13 +398,16 @@ video {
 /* .container:first-of-type{
 	bottom: 30%;
 } */
-
-
-
 .vantage .container {
-	position: relative;
+	padding-bottom: 10%;
+	padding-top: 0;
+	margin-top: -50%;
 }
 
+.vantage h2 {
+	margin: auto;
+	margin-bottom: 10px;
+}
 
 #prevBtn,
 #nextBtn {
@@ -403,16 +424,16 @@ video {
 	user-select: none;
 	scale: 50%;
 	top: 94%;
+	z-index: 15;
 }
 
 #nextBtn {
 	right: 10px;
-	z-index: 99;
 }
 
 #prevBtn {
 	left: 10px;
-	z-index: 99;
+
 }
 
 #prevBtn:hover,
@@ -420,9 +441,21 @@ video {
 	background-color: rgba(255, 255, 255, 0.8);
 }
 
+#magazine {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100vw;
+	margin: 0;
+}
+
+#magazine img {
+	width: 100vw;
+	height: 100vh;
+	object-fit: cover;
+}
 
 
-
+/* ----------------------------FOOTER---------------------------- */
 
 footer {
 	background-color: #fff;
@@ -435,12 +468,24 @@ footer {
 
 }
 
-h3 {
+h4 {
 	font-size: 1.5em;
 	font-family: AMFlareRg;
 }
 
+h3 {
+	font-size: 0.7em;
+	color: white;
+	text-transform: uppercase;
+	margin-top: 10px;
+}
+
 h5 {
+	color: black;
+	font-size: 14px;
+}
+
+h6 {
 	font-size: 9px;
 	margin-bottom: 75px;
 }
@@ -528,6 +573,15 @@ svg {
 
 @media only screen and (min-width: 800px) {
 
+	nav { 
+	translate: -100% 0%;
+	width: 408px;
+	}
+
+	nav button:first-of-type {
+		justify-self: start;
+	}
+
 	#prevBtn,
 	#nextBtn {
 		scale: 100%;
@@ -537,7 +591,7 @@ svg {
 	.container {
 		bottom: 0;
 	}
-	
+
 	.bdx p {
 		font-size: 44px;
 		margin-left: 5%;
@@ -549,5 +603,20 @@ svg {
 
 	.reveal-type p {
 		margin-left: 5%;
+	}
+
+
+	.buttonKlein {
+		justify-content: center;
+	}
+
+	.vantage .container {
+		padding-bottom: 10%;
+		padding-top: 0;
+		margin-top: -20%;
+	}
+
+	#magazine img {
+		width: 50vw;
 	}
 }
