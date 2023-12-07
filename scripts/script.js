@@ -40,13 +40,34 @@ function sluitMenu() {
 
 
 
-// ------------- CODE CAROUSEL  (Met hulp van ChatGPT)------------
+// ------------- CODE CAROUSEL (https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollLeft)------------
 
 var naarLinks = document.getElementById('prevBtn');
 var naarRechts = document.getElementById('nextBtn');
 
-// function slideLinks {
-// }
+function links() {
+  if (screen.width < 700) {
+    document.getElementById("video-carousel").scrollLeft -= 500;
+  }
+  else {
+    document.getElementById("video-carousel").scrollLeft -= 1000;
+  }
+}
+
+function rechts() {
+  if (screen.width < 700) {
+    document.getElementById("video-carousel").scrollLeft += 500;
+  }
+  else {
+    document.getElementById("video-carousel").scrollLeft += 1000;
+  }
+}
+
+naarLinks.addEventListener("click", links);
+naarRechts.addEventListener("click", rechts);
+
+
+
 
 // ------------- Scrolltext   https://codepen.io/designcourse/pen/vYQQKBW ------------
 gsap.registerPlugin(ScrollTrigger)

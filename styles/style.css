@@ -51,6 +51,7 @@ body {
 	padding: 0;
 	margin: 0;
 	font-family: AMSansRg;
+	scroll-snap-type: x mandatory;
 }
 
 header {
@@ -268,7 +269,7 @@ nav img {
 	padding: 48px 24px;
 	background-image: url("../images/quote-mobile.png");
 	background-position: center;
-	background-size: fill;
+	background-size: cover;
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -341,16 +342,14 @@ nav img {
 }
 
 
-
-
-
-
-
-
-
 #video-carousel {
 	display: flex;
 	flex-wrap: nowrap;
+	overflow: auto;
+	height: 100vh;
+	scroll-snap-type: x mandatory;
+	scroll-snap-align: center;
+
 }
 
 video {
@@ -358,7 +357,11 @@ video {
 	height: 100vh;
 	object-fit: cover;
 	min-width: 100vw;
+	max-width: 100vw;
 	padding: 0;
+	flex: 1;
+	transition: translate 1s;
+	scroll-snap-align: center;
 }
 
 .container {
@@ -368,11 +371,16 @@ video {
 	flex-wrap: wrap;
 	flex-direction: column;
 	position: relative;
-	bottom: 10%;
+	bottom: 35%;
 	max-width: 90vw;
 	margin-left: 5vw;
 
 }
+
+/* .container:first-of-type{
+	bottom: 30%;
+} */
+
 
 
 .vantage .container {
@@ -383,7 +391,6 @@ video {
 #prevBtn,
 #nextBtn {
 	position: absolute;
-	top: 50%;
 	width: auto;
 	padding: 16px;
 	margin-top: -22px;
@@ -394,14 +401,18 @@ video {
 	font-weight: bold;
 	transition: 0.6s ease;
 	user-select: none;
+	scale: 50%;
+	top: 94%;
 }
 
 #nextBtn {
 	right: 10px;
+	z-index: 99;
 }
 
 #prevBtn {
 	left: 10px;
+	z-index: 99;
 }
 
 #prevBtn:hover,
@@ -428,11 +439,6 @@ h3 {
 	font-size: 1.5em;
 	font-family: AMFlareRg;
 }
-
-
-/* h4:first-of-type {
-	margin-top: 50px;
-} */
 
 h5 {
 	font-size: 9px;
@@ -520,16 +526,28 @@ svg {
 
 
 
-@media only screen and (max-width: 600px) {
-	video:first-of-type {
-
-		display: block;
-		margin-left: -50%;
-	}
+@media only screen and (min-width: 800px) {
 
 	#prevBtn,
 	#nextBtn {
-		scale: 50%;
-		top: 94%;
+		scale: 100%;
+		top: 50%;
+	}
+
+	.container {
+		bottom: 0;
+	}
+	
+	.bdx p {
+		font-size: 44px;
+		margin-left: 5%;
+	}
+
+	.bdx button:first-of-type {
+		margin-left: 5%;
+	}
+
+	.reveal-type p {
+		margin-left: 5%;
 	}
 }
