@@ -356,7 +356,7 @@ nav img {
 	font-family: AMFlareRg;
 	font-size: 1em;
 	margin-left: 5%;
-	padding-bottom: 15px;
+	padding-bottom: 60px;
 }
 
 #video-carousel {
@@ -452,6 +452,38 @@ video {
 	width: 100vw;
 	height: 100vh;
 	object-fit: cover;
+}
+
+
+
+#news {
+	display: flex;
+	overflow-x: auto;
+	font-family: AMsansLt;
+}
+
+#news article {
+	padding: 104px 24px;
+}
+
+
+
+#news img {
+	width: 327px;
+	height: 500px;
+	object-fit: cover;
+	padding-bottom: 3em;
+
+}
+
+#news img:hover{
+	scale: 110%;
+	transition: 6s ease;
+}
+
+
+#news p {
+	color: black;
 }
 
 
@@ -603,6 +635,11 @@ svg {
 
 	.reveal-type p {
 		margin-left: 5%;
+		font-size: 44px;
+	}
+
+	.reveal-type p:nth-of-type(2) {
+		font-size: 25px;
 	}
 
 
@@ -618,5 +655,17 @@ svg {
 
 	#magazine img {
 		width: 50vw;
+	}
+
+	form {
+		width: 30%;
+	}
+
+	.lijntje:nth-of-type(2) {
+		width: 30%;
+	}
+
+	h6 {
+		width: 30%;
 	}
 }
