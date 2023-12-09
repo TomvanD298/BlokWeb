@@ -21,20 +21,6 @@
 /* JOUW STYLING */
 /****************/
 
-#style-3::-webkit-scrollbar-track {
-	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-	background-color: transparent;
-}
-
-#style-3::-webkit-scrollbar {
-	width: 6px;
-	background-color: transparent;
-}
-
-#style-3::-webkit-scrollbar-thumb {
-	background-color: #000000;
-}
-
 
 
 /* jouw code */
@@ -67,7 +53,6 @@ body {
 	padding: 0;
 	margin: 0;
 	font-family: AMSansRg;
-	scroll-snap-type: x mandatory;
 }
 
 header {
@@ -379,7 +364,6 @@ video {
 	padding: 0;
 	flex: 1;
 	transition: translate 1s;
-	scroll-snap-align: center;
 }
 
 .container {
@@ -395,9 +379,6 @@ video {
 
 }
 
-/* .container:first-of-type{
-	bottom: 30%;
-} */
 .vantage .container {
 	padding-bottom: 10%;
 	padding-top: 0;
@@ -441,6 +422,46 @@ video {
 	background-color: rgba(255, 255, 255, 0.8);
 }
 
+.videoLayout {
+	position: absolute;
+	z-index: 10;
+	min-height: 100vh;
+	width: 100vw;
+	margin-top: -100vh;
+	font-family: AMFlareMd;
+
+}
+
+.videoLayout p {
+	font-size: 16px;
+	text-transform: uppercase;
+	top: 0;
+	left: 0;
+	padding: 104px 24px;
+
+}
+
+.videoButton {
+	position: absolute;
+	padding: 48px 24px;
+	display: flex;
+	gap: 10px;
+	bottom: 0;
+}
+
+.videoButton button {
+	border: none;
+	background-color: transparent;
+	color: white;
+}
+
+.videoButton img {
+	max-width: 15%;
+	max-height: 15%;
+
+}
+
+
 #magazine {
 	display: flex;
 	flex-wrap: wrap;
@@ -448,10 +469,11 @@ video {
 	margin: 0;
 }
 
-#magazine img {
+#magazine video {
 	width: 100vw;
 	height: 100vh;
 	object-fit: cover;
+	margin-top: -10px;
 }
 
 
@@ -459,32 +481,71 @@ video {
 #news {
 	display: flex;
 	overflow-x: auto;
-	font-family: AMsansLt;
+	font-family: AMSansLt;
 }
 
+#bovenNews {
+	display: flex;
+	align-items: center;
+	padding: 64px 24px;
+	justify-content: space-between;
+	background-color: #f4f4f2;
+}
+
+#bovenNews h2,
+button {
+	font-family: AMFlareRg;
+	font-size: 14px;
+	color: black;
+	text-transform: uppercase;
+}
+
+#bovenNews button {
+	border: none;
+	background-color: transparent;
+	display: flex;
+	align-items: center;
+}
+
+#bovenNews img{
+	height: 16px;
+	margin-left: 8px;
+}
+
+#news {
+	background-color: #f4f4f2;
+	scroll-snap-type: x mandatory;
+}
+
+
 #news article {
-	padding: 104px 24px;
+	padding: 0 24px 64px;
+	scroll-snap-align: center;
 }
 
 
 
 #news img {
-	width: 327px;
-	height: 500px;
+	width: 90vw;
+	max-width: 600px;
+	height: 80vh;
+	max-height: 600px;
 	object-fit: cover;
 	padding-bottom: 3em;
+	transition: transform 1s ease-in;
 
 }
 
-#news img:hover{
-	scale: 110%;
+#news img:hover {
 	transition: 6s ease;
 }
 
 
 #news p {
 	color: black;
+	font-size: 14px;
 }
+
 
 
 /* ----------------------------FOOTER---------------------------- */
@@ -605,9 +666,9 @@ svg {
 
 @media only screen and (min-width: 800px) {
 
-	nav { 
-	translate: -100% 0%;
-	width: 408px;
+	nav {
+		translate: -100% 0%;
+		width: 408px;
 	}
 
 	nav button:first-of-type {
@@ -653,7 +714,7 @@ svg {
 		margin-top: -20%;
 	}
 
-	#magazine img {
+	#magazine video {
 		width: 50vw;
 	}
 
