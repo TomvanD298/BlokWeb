@@ -13,12 +13,11 @@
 </head>
 
 <body>
-
 	<header>
 		<button aria-hidden="true"><svg viewBox="0 0 100 20" width="40" height="30">
-			<rect width="100" height="8" rx="8"></rect>
-			<rect y="30" width="100" height="8" rx="8"></rect>
-		</svg></button>
+				<rect width="100" height="8" rx="8"></rect>
+				<rect y="30" width="100" height="8" rx="8"></rect>
+			</svg></button>
 		<nav>
 			<button aria-hidden="true"><img src="https://assets.codepen.io/274456/ui-icon-cross.svg"
 					alt="close button" /></button>
@@ -38,12 +37,34 @@
 		</nav>
 
 		<img id="logo" src="images/logo.svg">
+		<img id="shopbag" src="images/shopbag.png">
 	</header>
 
-	
+	<main>
+
+		<div id="headerBlur"></div>
+
+		<section id="merch">
+			<h1>Offical Team Merchandise</h1>
+			<div class="videoButton">
+				<button>Discover F1 Team Kit & Lifestyle</button>
+				<img src="images/pijlRechts.svg">
+			</div>
+		</section>
+
+		<section>
+			<h2 id="bestseller">Discover f1 bestsellers</h2>
+			<div>
+				<img src="images/hatYellow.png">
+				
+			</div>
+		</section>
+
+
+	</main>
 
 	<footer>
-		<h3>Aston Martin</h3>
+		<h4>Aston Martin</h4>
 		<div class="lijntje"></div>
 
 
@@ -54,7 +75,7 @@
 		</ul>
 
 
-		<h4>Find a dealer</h4>
+		<h5>Find a dealer</h5>
 
 		<!-- Code met hulp van https://pagedart.com/blog/how-to-add-a-search-bar-in-html/ -->
 		<form role="search" id="form">
@@ -72,10 +93,10 @@
 
 
 		<div class="lijntje"></div>
-		<h5>The emissions/fuel economy figures quoted are sourced from official regulated test results obtained through
+		<h6>The emissions/fuel economy figures quoted are sourced from official regulated test results obtained through
 			laboratory testing. They are for comparability purposes only and may not reflect your real driving
 			experience, which may vary depending on factors including road conditions, weather, vehicle load and driving
-			style.</h5>
+			style.</h6>
 
 
 		<!-- ICONS van https://codepen.io/ruandre/pen/MWXxem -->
@@ -132,10 +153,9 @@
 			</li>
 			<li>
 				<a href="https://www.tiktok.com/@astonmartin?lang=en" target="_blank">
-					<svg viewbox="0 0 512 512">
-						<path
-							d="M210.8 80.3c-2.3 18.3-6.4 33.4-12.4 45.2 -6 11.9-13.9 22-23.9 30.5 -9.9 8.5-21.8 14.9-35.7 19.5v50.6h38.9v124.5c0 16.2 1.7 28.6 5.1 37.1 3.4 8.5 9.5 16.6 18.3 24.2 8.8 7.6 19.4 13.4 31.9 17.5 12.5 4.1 26.8 6.1 43 6.1 14.3 0 27.6-1.4 39.9-4.3 12.3-2.9 26-7.9 41.2-15v-55.9c-17.8 11.7-35.7 17.5-53.7 17.5 -10.1 0-19.1-2.4-27-7.1 -5.9-3.5-10-8.2-12.2-14 -2.2-5.8-3.3-19.1-3.3-39.7v-91.1H345.5v-55.8h-84.4v-90H210.8z">
-						</path>
+					<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 24 24">
+						<path fill="black"
+							d="M16.6 5.82s.51.5 0 0A4.278 4.278 0 0 1 15.54 3h-3.09v12.4a2.592 2.592 0 0 1-2.59 2.5c-1.42 0-2.6-1.16-2.6-2.6c0-1.72 1.66-3.01 3.37-2.48V9.66c-3.45-.46-6.47 2.22-6.47 5.64c0 3.33 2.76 5.7 5.69 5.7c3.14 0 5.69-2.55 5.69-5.7V9.01a7.35 7.35 0 0 0 4.3 1.38V7.3s-1.88.09-3.24-1.48z" />
 					</svg>
 				</a>
 			</li>
@@ -143,9 +163,9 @@
 		</ul>
 
 		<div id="footerBeneden">
-			<h4>Terms & Conditions</h4>
-			<h4>Privacy</h4>
-			<h4>Cookies</h4>
+			<h5>Terms & Conditions</h5>
+			<h5>Privacy</h5>
+			<h5>Cookies</h5>
 		</div>
 		<p>© Aston Martin 2023</p>
 	</footer>
