@@ -197,7 +197,7 @@ nav a {
 	align-items: center;
 	column-gap: .25em;
 	text-decoration: none;
-	color: rgba(255, 255, 255, 0.8);
+	color: rgba(255, 255, 255, 0.5);
 
 	border-bottom: solid 1px var(--menu-border);
 
@@ -206,11 +206,12 @@ nav a {
 
 nav a:hover {
 	color: rgba(255, 255, 255, 1);
+	text-decoration: underline;
 }
 
 nav a.active {
 	color: rgba(255, 255, 255, 1);
-	text-decoration: underline;
+
 }
 
 nav img {
@@ -297,8 +298,9 @@ nav img {
 }
 
 .bdx p {
-	/* padding: 48px 24px; */
+	padding: 48px 24px;
 	font-size: 28px;
+	letter-spacing: .55px;
 }
 
 .buttonWit,
@@ -366,6 +368,7 @@ nav img {
 	flex-wrap: nowrap;
 	overflow: auto;
 	height: 100vh;
+	overflow-x: hidden;
 	scroll-snap-type: x mandatory;
 
 }
@@ -502,12 +505,6 @@ video {
 	margin-top: -10px;
 }
 
-#news {
-	display: flex;
-	overflow-x: auto;
-	font-family: AMSansLt;
-}
-
 #bovenNews {
 	display: flex;
 	align-items: center;
@@ -536,9 +533,20 @@ button {
 	margin-left: 8px;
 }
 
+
 #news {
+	display: flex;
+	overflow-x: auto;
+	font-family: AMSansLt;
+
 	background-color: #f4f4f2;
 	scroll-snap-type: x mandatory;
+}
+
+#news h3{
+	color: black;
+	font-size: 14px;
+	text-transform: none;
 }
 
 
@@ -612,6 +620,15 @@ footer p {
 	flex-grow: 1;
 }
 
+footer a{
+	color: black;
+	text-decoration: none;
+}
+
+footer a:hover{
+	text-decoration: underline;
+}
+
 #footerBoven {
 	all: unset;
 	display: flex;
@@ -663,7 +680,7 @@ svg {
 	color: #6f6f6f;
 	width: 16px;
 	height: 16px;
-	padding: none;
+	padding: 0;
 }
 
 
@@ -689,47 +706,151 @@ svg {
 /* ----------------------------SHOP---------------------------- */
 
 #merch {
-	height: 97vh;
+	height: 105vh;
 	background-image: url("../images/shop.jpeg");
-	background-position: center;
+	background-position: 62%;
 	background-size: cover;
-	display: flex;
-	flex-wrap: wrap;
+
+	margin-top: -40px;
 }
 
 h1 {
-	position: absolute;
-	left: 5vw;
-	bottom: 20vh;
+	position: relative;
+	top: 75vh;
 	color: white;
-	margin: auto;
 	font-size: 28px;
 	font-family: AMFlareRg;
-	font-weight: 00;
+	text-align: center;
 }
- #merch .videoButton {
-	padding: 0px;
-	position: absolute;
-	left: 15vw;
-	bottom: 15vh;
- }
 
-#merch button {
+.discover {
+	position: relative;
+	top: 75vh;
+	text-align: center;
+}
+
+
+.discover button {
 	text-transform: none;
-}
-
-#merch img {
-	width: 7%;
-}
-
-#bestseller {
+	border: none;
+	background-color: transparent;
+	color: white;
 	font-family: AMFlareRg;
+	font-size: 14px;
+
+}
+
+.discover img {
+	width: 16px;
+}
+
+#shopItems {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	gap: 1%;
+
+	width: 90%;
+	margin-left: 5%;
+
+	font-family: AMFlareRg;
+	color: black;
+}
+
+.items {
+	width: 45%;
+	max-width: 330px;
+	flex-grow: 1;
+	margin-bottom: 75px;
+}
+
+#shopItems img {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+}
+
+#shopItems h2 {
 	font-size: 16px;
 	color: black;
 	text-transform: uppercase;
 	text-align: center;
-	margin: 60px 0 60px;
+	margin: 60px auto 60px auto;
 }
+
+#shopItems a {
+	font-size: 14px;
+	line-height: normal;
+	text-transform: uppercase;
+	color: black;
+	text-decoration: none;
+}
+
+#shopItems a:hover {
+	text-decoration: underline;
+}
+
+#shopItems p {
+	color: black;
+	font-size: 14px;
+}
+
+#silk {
+	height: 100vh;
+	width: 100vw;
+	background-image: url("../images/silk.png");
+	background-position: left;
+	background-size: cover;
+}
+
+#silk h3 {
+	position: relative;
+	top: 70vh;
+
+	font-size: 34px;
+	font-family: AMFlareRg;
+	text-transform: none;
+	text-align: center;
+	margin: 10px 0 0;
+}
+
+#silk p {
+	position: relative;
+	top: 70vh;
+	font-size: 14px;
+	font-family: AMSansRg;
+	text-align: center;
+	margin: 10px 0 5px;
+}
+
+#drawing {
+	background-color: #004f5f;
+	padding: 75px 0 94px;
+
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#drawing a {
+font-size: 16px;
+margin: 0 0 20px;
+color: white;
+text-transform: uppercase;
+width: 70%;
+}
+
+#drawing a:hover{
+	text-decoration: underline
+}
+
+#drawing img {
+	width: 100vw;
+	height: auto;
+}
+
 
 
 
@@ -757,9 +878,10 @@ h1 {
 		bottom: 0;
 	}
 
+
 	.bdx p {
 		font-size: 44px;
-		margin-left: 5%;
+		padding: 104px 456px 104px 156px;
 	}
 
 	.bdx button:first-of-type {
@@ -808,17 +930,42 @@ h1 {
 	}
 
 
-	#merch {
-		height: 100vh;
-	}
-
-	#merch .videoButton {
-		bottom: 45vh;
-	 }
-	
-
 	h1 {
 		font-size: 2.4vw !important;
-		bottom: 50vh;
+		top: 45vh;
+		right: 30vw;
+	}
+
+	.discover {
+		top: 45vh;
+		right: 30vw;
+	}
+
+	#shopItems {
+		gap: 3%;
+	}
+
+	#shopItems h2 {
+		margin: 60px 40% 60px 40%;
+	}
+
+	#silk h3 {
+		font-size: 40px;
+		top: 45vh;
+		left: 30vw;
+	}
+
+	#silk p {
+		top: 45vh;
+		left: 30vw;
+	}
+
+	#silk .discover{
+		top: 46vh;
+		left: 30vw;
+	}
+
+	#drawing img{
+		max-width: 70%;
 	}
 }
