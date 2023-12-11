@@ -164,15 +164,15 @@ nav {
 	top: 0;
 	bottom: 0;
 
-	translate: 0% -100%;
+	transform: translate(0 , -100%);
 
-	transition: translate .6s ease-out;
+	transition: .6s ease;
 	z-index: 99;
 }
 
 nav.toonMenu {
-	translate: 0% 0%;
-	transition: translate .6s ease-out;
+	transform: translate(0 , 0);
+	transition: .6s ease;
 }
 
 nav ul {
@@ -831,7 +831,7 @@ h1 {
 @media only screen and (min-width: 800px) {
 
 	nav {
-		translate: -100% 0%;
+		transform: translate(-100% , 0%);
 		width: 408px;
 	}
 
