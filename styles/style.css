@@ -342,6 +342,19 @@ nav img {
 	margin: 0 16px 0 16px;
 }
 
+.buttonGroen:hover,
+.buttonGroenKlein:hover {
+	background-color: rgba(255, 255, 255, 0.7);
+	color: rgb(71, 159, 136);
+}
+
+.buttonWit:hover,
+.buttonWitKlein:hover {
+	background-color: rgba(71, 159, 136, 0.7);
+	color: white;
+}
+
+
 
 /* ----------------------------CAROUSEL---------------------------- */
 
@@ -543,7 +556,7 @@ button {
 	scroll-snap-type: x mandatory;
 }
 
-#news h3{
+#news h3 {
 	color: black;
 	font-size: 14px;
 	text-transform: none;
@@ -620,12 +633,12 @@ footer p {
 	flex-grow: 1;
 }
 
-footer a{
+footer a {
 	color: black;
 	text-decoration: none;
 }
 
-footer a:hover{
+footer a:hover {
 	text-decoration: underline;
 }
 
@@ -835,14 +848,14 @@ h1 {
 }
 
 #drawing a {
-font-size: 16px;
-margin: 0 0 20px;
-color: white;
-text-transform: uppercase;
-width: 70%;
+	font-size: 16px;
+	margin: 0 0 20px;
+	color: white;
+	text-transform: uppercase;
+	width: 70%;
 }
 
-#drawing a:hover{
+#drawing a:hover {
 	text-decoration: underline
 }
 
@@ -960,12 +973,12 @@ width: 70%;
 		left: 30vw;
 	}
 
-	#silk .discover{
+	#silk .discover {
 		top: 46vh;
 		left: 30vw;
 	}
 
-	#drawing img{
+	#drawing img {
 		max-width: 70%;
 	}
 }
