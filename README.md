@@ -36,16 +36,16 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  Aston Martins
+  Aston Martin
   https://www.astonmartin.com/en/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Aston Martin - Home
-  <img src="readme-images/Screenshot-am.jpg" width="375px" alt="carousel met video's">
+  <img src="readme-images/Screenshot-am.png" width="100px" alt="carousel met video's">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  Aston Martin - DBX707  
-  <img src="readme-images/Screenshot-am2.jpg" width="375px" alt="Detail pagina van de auto">
+  Aston Martin - Store  
+  <img src="readme-images/Screenshot-shop.png" width="100px" alt="Shop pagina van Aston martin">
  
 </details>
 
@@ -71,13 +71,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/FED.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdown-am.jpg" width="100px" alt="breakdown van de hele pagina">
+  <img src="readme-images/breakdown-am-shop.png" width="100px" alt="Shop pagina van Aston martin">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/Screenshot-menu.png" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/Screenshot-menu.png" width="100px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/Screenshot-caroussel.png" width="100px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -94,23 +95,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
 
-  ### Agenda voor meeting
-  samen met je groepje opstellen
+  Ik vond het erg lastig om de caroussel te maken. Had niet helemaal door hoe dat precies werkte maar het is uiteindelijk gelukt.
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
-
-  ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  Verder heb ik niet om feedback gevraagd of vragen gesteld. Dit kwam omdat ik nog niet heel veel had gedaan aan mijn website.
 
 </details>
 
@@ -126,24 +113,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
-
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
-
-  ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  Ook hier niet echt om feedback gevraagd, had het niet nodig en was lekker op weg.
 
 </details>
 
@@ -157,7 +127,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
+  Het navigeren binnen de website met de TAB is een stuk makkelijker en de cd
+
+
+  <img src="readme-images/WCAG1.jpeg" width="100px" alt="WCAG 1">
+  <img src="readme-images/WCAG2.jpeg" width="100px" alt="WCAG 2">
+  <img src="readme-images/WCAG3.jpeg" width="100px" alt="WCAG 3">
+  <img src="readme-images/WCAG4.jpeg" width="100px" alt="WCAG 4">
+  <img src="readme-images/WCAG5.jpeg" width="100px" alt="WCAG 5">
+
 
 </details>
 
@@ -173,24 +151,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+  Ik had pagina 1 af en was nog niet begonnen aan pagina 2. Ik wilde even langs een studetenassisten voordat ik daar aan begon.
 
-  ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
-
-
-  ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
-
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  Ik heb in de laatste voortgang gesprek met één van de studentassistenten gezeten. Ik had geen vragen of iets dergelijks. Ik wilde gewoon dat hij even keek of alles er een beetje goed uit zag. Hij gaf als feedback dat alles er keurig uitzag en ik zo door moest gaan.
 
 </details>
 
@@ -200,23 +163,31 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Eindgesprek (week 5)
 
-<details>
+<details open>
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/Screenshot-eigen1.png" width="100px" alt="uitomst opdracht 1">
+  <img src="readme-images/Screenshot-eigen2.png" width="100px" alt="uitomst opdracht 1">
+  <img src="readme-images/Screenshot-eigen3.png" width="100px" alt="uitomst opdracht 1">
+  <img src="readme-images/Screenshot-eigen4.png" width="100px" alt="uitomst opdracht 1">
+  <img src="readme-images/Screenshot-eigen5.png" width="100px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+  Eigenlijk alle hoofdelementen die ik er in wilde hebben zitten er in en werken. De Nav, carousel en de scrolltext. Ook is de styling en Responsive goed gelukt. 
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/Screenshot-top.png" width="200px" alt="top">
+  <img src="readme-images/Screenshot-top2.png" width="100px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  De Carousel werkt, alleen had ik het met een mooie transitie willen laten overvloeien naar de volgende video. Dit kon helaas niet omdat ik met de ScrollY functie heb gewerkt.
+  In het vervolg wil ik dit anders oplossen.
+
+  <img src="readme-images/Screenshot-caroussel2.png" width="100px" alt="bummer">
 </details>
 
 
@@ -232,8 +203,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. Searchbar footer --- https://pagedart.com/blog/how-to-add-a-search-bar-in-html/ 
+  2. Icons --- https://codepen.io/ruandre/pen/MWXxem
+  3. Pound Icon --- https://www.toptal.com/designers/htmlarrows/currency/pound-sign/
+  4. Menu ---- https://codepen.io/shooft/pen/MWZYoqa
+  5. CODE CAROUSEL --- https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollLeft
+  6. Scrolltext --- https://codepen.io/designcourse/pen/vYQQKBW
 
 </details>

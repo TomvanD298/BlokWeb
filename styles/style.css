@@ -21,8 +21,6 @@
 /* JOUW STYLING */
 /****************/
 
-
-
 /* jouw code */
 
 @font-face {
@@ -55,7 +53,6 @@ body {
 	font-family: AMSansRg;
 }
 
-
 /* ----------------------------HEADER---------------------------- */
 
 header {
@@ -87,9 +84,6 @@ header {
 	background-color: rgba(0, 0, 0, 0.5);
 	backdrop-filter: blur(20px);
 }
-
-
-
 
 h2 {
 	color: #fff;
@@ -154,8 +148,6 @@ header button {
 	color: #fff;
 }
 
-
-
 nav button:first-of-type {
 	justify-self: end;
 }
@@ -181,15 +173,12 @@ nav {
 nav.toonMenu {
 	translate: 0% 0%;
 	transition: translate .6s ease-out;
-
-
 }
 
 nav ul {
 	margin: 0;
 	padding: 0em;
 	list-style: none;
-
 }
 
 nav a {
@@ -198,9 +187,7 @@ nav a {
 	column-gap: .25em;
 	text-decoration: none;
 	color: rgba(255, 255, 255, 0.5);
-
 	border-bottom: solid 1px var(--menu-border);
-
 	margin: 0 0 24px 0;
 }
 
@@ -211,12 +198,10 @@ nav a:hover {
 
 nav a.active {
 	color: rgba(255, 255, 255, 1);
-
 }
 
 nav img {
 	padding-bottom: 16px;
-
 }
 
 
@@ -240,7 +225,6 @@ nav img {
 	display: flex;
 	align-items: center;
 	justify-content: center;
-
 	animation: fadeOut 2s ease forwards;
 	animation-delay: 5s;
 
@@ -381,9 +365,8 @@ nav img {
 	flex-wrap: nowrap;
 	overflow: auto;
 	height: 100vh;
-	overflow-x: hidden;
+	overflow-Y: hidden;
 	scroll-snap-type: x mandatory;
-
 }
 
 .video {
@@ -412,7 +395,6 @@ video {
 	bottom: 35%;
 	max-width: 90vw;
 	margin-left: 5vw;
-
 }
 
 /* ----------------------------VANTAGE---------------------------- */
@@ -469,7 +451,6 @@ video {
 	width: 100vw;
 	margin-top: -100vh;
 	font-family: AMFlareMd;
-
 }
 
 .videoLayout p {
@@ -478,7 +459,6 @@ video {
 	top: 0;
 	left: 0;
 	padding: 104px 24px;
-
 }
 
 .videoButton {
@@ -498,7 +478,6 @@ video {
 .videoButton img {
 	max-width: 15%;
 	max-height: 15%;
-
 }
 
 /* ----------------------------MAGAZINE---------------------------- */
@@ -551,7 +530,6 @@ button {
 	display: flex;
 	overflow-x: auto;
 	font-family: AMSansLt;
-
 	background-color: #f4f4f2;
 	scroll-snap-type: x mandatory;
 }
@@ -562,13 +540,10 @@ button {
 	text-transform: none;
 }
 
-
 #news article {
 	padding: 0 24px 64px;
 	scroll-snap-align: center;
 }
-
-
 
 #news img {
 	width: 90vw;
@@ -578,19 +553,16 @@ button {
 	object-fit: cover;
 	padding-bottom: 3em;
 	transition: transform 1s ease-in;
-
 }
 
 #news img:hover {
 	transition: 6s ease;
 }
 
-
 #news p {
 	color: black;
 	font-size: 14px;
 }
-
 
 
 /* ----------------------------FOOTER---------------------------- */
@@ -603,7 +575,6 @@ footer {
 	align-items: center;
 	font-family: AMSansLt;
 	font-size: 14px;
-
 }
 
 h4 {
@@ -653,13 +624,11 @@ footer a:hover {
 	list-style: none;
 }
 
-
 .lijntje {
 	height: 1px;
 	background: black;
 	margin-bottom: 50px;
 }
-
 
 form {
 	width: 100%;
@@ -723,7 +692,6 @@ svg {
 	background-image: url("../images/shop.jpeg");
 	background-position: 62%;
 	background-size: cover;
-
 	margin-top: -40px;
 }
 
@@ -750,7 +718,6 @@ h1 {
 	color: white;
 	font-family: AMFlareRg;
 	font-size: 14px;
-
 }
 
 .discover img {
@@ -762,10 +729,8 @@ h1 {
 	flex-wrap: wrap;
 	justify-content: center;
 	gap: 1%;
-
 	width: 90%;
 	margin-left: 5%;
-
 	font-family: AMFlareRg;
 	color: black;
 }
@@ -820,7 +785,6 @@ h1 {
 #silk h3 {
 	position: relative;
 	top: 70vh;
-
 	font-size: 34px;
 	font-family: AMFlareRg;
 	text-transform: none;
@@ -840,8 +804,6 @@ h1 {
 #drawing {
 	background-color: #004f5f;
 	padding: 75px 0 94px;
-
-
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -863,10 +825,6 @@ h1 {
 	width: 100vw;
 	height: auto;
 }
-
-
-
-
 
 /* ----------------------------RESPONSIVE GROOT---------------------------- */
 
