@@ -130,11 +130,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Het navigeren binnen de website met de TAB is een stuk makkelijker en de cd
 
 
-  <img src="readme-images/WCAG1.jpeg" width="100px" alt="WCAG 1">
-  <img src="readme-images/WCAG2.jpeg" width="100px" alt="WCAG 2">
-  <img src="readme-images/WCAG3.jpeg" width="100px" alt="WCAG 3">
-  <img src="readme-images/WCAG4.jpeg" width="100px" alt="WCAG 4">
-  <img src="readme-images/WCAG5.jpeg" width="100px" alt="WCAG 5">
+  <img src="readme-images/WCAG1.jpeg" width="200px" alt="WCAG 1">
+  <img src="readme-images/WCAG2.jpeg" width="200px" alt="WCAG 2">
+  <img src="readme-images/WCAG3.jpeg" width="200px" alt="WCAG 3">
+  <img src="readme-images/WCAG4.jpeg" width="200px" alt="WCAG 4">
+  <img src="readme-images/WCAG5.jpeg" width="200px" alt="WCAG 5">
 
 
 </details>
@@ -167,17 +167,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/Screenshot-eigen1.png" width="100px" alt="uitomst opdracht 1">
-  <img src="readme-images/Screenshot-eigen2.png" width="100px" alt="uitomst opdracht 1">
-  <img src="readme-images/Screenshot-eigen3.png" width="100px" alt="uitomst opdracht 1">
-  <img src="readme-images/Screenshot-eigen4.png" width="100px" alt="uitomst opdracht 1">
-  <img src="readme-images/Screenshot-eigen5.png" width="100px" alt="uitomst opdracht 1">
+  <img src="readme-images/Screenshot-eigen1.png" width="200px" alt="uitomst opdracht 1">
+  <img src="readme-images/Screenshot-eigen2.png" width="200px" alt="uitomst opdracht 1">
+  <img src="readme-images/Screenshot-eigen3.png" width="200px" alt="uitomst opdracht 1">
+  <img src="readme-images/Screenshot-eigen4.png" width="200px" alt="uitomst opdracht 1">
+  <img src="readme-images/Screenshot-eigen5.png" width="200px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
   Eigenlijk alle hoofdelementen die ik er in wilde hebben zitten er in en werken. De Nav, carousel en de scrolltext. Ook is de styling en Responsive goed gelukt. 
 
-  <img src="readme-images/Screenshot-top.png" width="200px" alt="top">
+  <img src="readme-images/Screenshot-top.png" width="400px" alt="top">
   <img src="readme-images/Screenshot-top2.png" width="100px" alt="top">
 
 
