@@ -61,6 +61,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Hij leest ook dingen op de achtergrond op zoals: Open language switcher
   Ook leest hij text die animeert 2x voor, dus dus de de woorden woorden twee twee keer keer voorgelezen voorgelezen.
 
+  (foto's zie Toegankelijkheidstest 2)
+
 </details>
 
 
@@ -123,18 +125,18 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Toegankelijkheidstest 2/2 (week 4)
 
-<details>
+<details open>
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Het navigeren binnen de website met de TAB is een stuk makkelijker en de cd
+  Het navigeren binnen de website met de TAB is een stuk makkelijker. Ook de screenreader leest niet alle woorden dubbel. ipdv leest hij alle letters individueel voor. Dit is het enige in mijn website wat ik kon vinden wat NIET friendly was voor   een screenreader
 
 
-  <img src="readme-images/WCAG1.jpeg" width="100px" alt="WCAG 1">
-  <img src="readme-images/WCAG2.jpeg" width="100px" alt="WCAG 2">
-  <img src="readme-images/WCAG3.jpeg" width="100px" alt="WCAG 3">
-  <img src="readme-images/WCAG4.jpeg" width="100px" alt="WCAG 4">
-  <img src="readme-images/WCAG5.jpeg" width="100px" alt="WCAG 5">
+  <img src="readme-images/WCAG1.jpeg" width="200px" alt="WCAG 1">
+  <img src="readme-images/WCAG2.jpeg" width="200px" alt="WCAG 2">
+  <img src="readme-images/WCAG3.jpeg" width="200px" alt="WCAG 3">
+  <img src="readme-images/WCAG4.jpeg" width="200px" alt="WCAG 4">
+  <img src="readme-images/WCAG5.jpeg" width="200px" alt="WCAG 5">
 
 
 </details>
@@ -167,17 +169,17 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/Screenshot-eigen1.png" width="100px" alt="uitomst opdracht 1">
-  <img src="readme-images/Screenshot-eigen2.png" width="100px" alt="uitomst opdracht 1">
-  <img src="readme-images/Screenshot-eigen3.png" width="100px" alt="uitomst opdracht 1">
-  <img src="readme-images/Screenshot-eigen4.png" width="100px" alt="uitomst opdracht 1">
-  <img src="readme-images/Screenshot-eigen5.png" width="100px" alt="uitomst opdracht 1">
+  <img src="readme-images/Screenshot-eigen1.png" width="200px" alt="uitomst opdracht 1">
+  <img src="readme-images/Screenshot-eigen2.png" width="200px" alt="uitomst opdracht 1">
+  <img src="readme-images/Screenshot-eigen3.png" width="200px" alt="uitomst opdracht 1">
+  <img src="readme-images/Screenshot-eigen4.png" width="200px" alt="uitomst opdracht 1">
+  <img src="readme-images/Screenshot-eigen5.png" width="200px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
   Eigenlijk alle hoofdelementen die ik er in wilde hebben zitten er in en werken. De Nav, carousel en de scrolltext. Ook is de styling en Responsive goed gelukt. 
 
-  <img src="readme-images/Screenshot-top.png" width="200px" alt="top">
+  <img src="readme-images/Screenshot-top.png" width="400px" alt="top">
   <img src="readme-images/Screenshot-top2.png" width="100px" alt="top">
 
 
