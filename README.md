@@ -61,6 +61,8 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Hij leest ook dingen op de achtergrond op zoals: Open language switcher
   Ook leest hij text die animeert 2x voor, dus dus de de woorden woorden twee twee keer keer voorgelezen voorgelezen.
 
+  (foto's zie Toegankelijkheidstest 2)
+
 </details>
 
 
@@ -127,7 +129,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
-  Het navigeren binnen de website met de TAB is een stuk makkelijker en de cd
+  Het navigeren binnen de website met de TAB is een stuk makkelijker. Ook de screenreader leest niet alle woorden dubbel. ipdv leest hij alle letters individueel voor. Dit is het enige in mijn website wat ik kon vinden wat NIET friendly was voor   een screenreader
 
 
   <img src="readme-images/WCAG1.jpeg" width="200px" alt="WCAG 1">
